@@ -28,6 +28,10 @@ a{
     justify-content: space-between;
 }
 
+.flex-ar{
+    justify-content: space-around;
+}
+
 .flex-wrap{
     flex-wrap: wrap;
 }
@@ -52,6 +56,7 @@ a{
 main .header-main{
     height: calc(100vh - 15vh);
     width: 16%;
+    max-width: 760px;
     background-color: black;
     padding: .5rem 1rem;
 }
@@ -102,6 +107,10 @@ main .header-main{
 }
 
 @media screen and (max-width:480px){
+    main .header-main{
+        max-width: 3vw;
+    }
+
     .header-main nav ul:last-child{
         display: none;
     }
@@ -113,6 +122,7 @@ main .music-main{
     height: calc(100vh - 15vh);
     width: 84%;
     background-color: blue;
+    overflow: auto;
 }
 
 /*upgrade*/
@@ -142,6 +152,21 @@ main .music-main{
 
 .categorie li{
     padding: 0 .5rem ;
+}
+
+/*Recently Played*/
+
+.recently-played, .jhon-doe, .artisti-popolari{
+    padding: .5rem 1rem;
+}
+
+.recently-played .items{
+    width: 12rem;
+    text-align: center;
+}
+
+.recently-played .items img{
+    width: 100%;
 }
 
 /*footer*/
