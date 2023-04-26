@@ -121,7 +121,6 @@ main .header-main{
 main .music-main{
     height: calc(100vh - 15vh);
     width: 84%;
-    background-color: blue;
     overflow: auto;
 }
 
@@ -160,12 +159,12 @@ main .music-main{
     padding: .5rem 1rem;
 }
 
-.recently-played .items{
+.items{
     width: 12rem;
     text-align: center;
 }
 
-.recently-played .items img{
+.items img{
     width: 100%;
 }
 
