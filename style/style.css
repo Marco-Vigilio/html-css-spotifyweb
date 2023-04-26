@@ -5,7 +5,11 @@
 }
 
 body{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style-type: none;
 }
 
 /*flex*/
@@ -35,11 +39,49 @@ main .header-main{
     height: calc(100vh - 15vh);
     width: 16%;
     color: white;
-    background-color: magenta;
+    background-color: black;
+    padding: .5rem 1rem;
 }
 
-.header-main img{
-    width: 30%;
+nav .logo{
+    width: 50%;
+    padding-bottom: .5rem;
+}
+
+nav ul{
+    padding: .5rem 0;
+}
+
+nav ul li{
+    padding: .2rem 0;
+    align-items: center;
+}
+
+nav .box{
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #B2B2B2;
+    text-align: center;
+    color: black;
+}
+
+.header-main .icon{
+    width: 1.2rem;
+}
+
+.header-bottom img:first-child{
+    width: 6%;
+} 
+
+.header-bottom hr{
+    margin: .5rem 0;
+}
+
+.header-bottom img:last-child{
+    height: 1.2rem;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #B2B2B2;
 }
 
 /*main music main*/
