@@ -6,10 +6,15 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 ul{
     list-style-type: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 /*flex*/
@@ -33,6 +38,10 @@ ul{
     justify-content: center;
 }
 
+.flex-al-cen{
+    align-items: center;
+}
+
 /*main header*/
 
 main .header-main{
@@ -41,6 +50,10 @@ main .header-main{
     color: white;
     background-color: black;
     padding: .5rem 1rem;
+}
+
+.header-main a{
+    color: white;
 }
 
 nav .logo{
@@ -61,7 +74,6 @@ nav .box{
     width: 1.5rem;
     height: 1.5rem;
     background-color: #B2B2B2;
-    text-align: center;
     color: black;
 }
 
@@ -77,8 +89,9 @@ nav .box{
     margin: .5rem 0;
 }
 
-.header-bottom img:last-child{
-    height: 1.2rem;
+.header-bottom a:last-child img{
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     object-fit: cover;
     background-color: #B2B2B2;
