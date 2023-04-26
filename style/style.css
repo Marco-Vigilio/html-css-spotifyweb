@@ -49,3 +49,9 @@ footer{
     height: 15vh;
     background-color: lime;
 }
+
+/*elementi da cancellare*/
+
+.trat{
+    border: 2px black dashed;
+}
