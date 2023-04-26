@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*flex*/
+
+.flex{
+    display: flex;
+}
+
+.flex-bet{
+    justify-content: space-between;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+/*main*/
+
+main .header-main{
+    height: calc(100vh - 15vh);
+    width: 16%;
+    background-color: magenta;
+}
+
+main .music-main{
+    height: calc(100vh - 15vh);
+    width: 84%;
+    background-color: blue;
+}
+
+/*footer*/
+
+footer{
+    height: 15vh;
+    background-color: lime;
+}
