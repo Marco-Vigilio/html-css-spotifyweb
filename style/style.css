@@ -101,6 +101,12 @@ main .header-main{
     background-color: #B2B2B2;
 }
 
+@media screen and (max-width:480px){
+    .header-main nav ul:last-child{
+        display: none;
+    }
+}
+
 /*main music main*/
 
 main .music-main{
@@ -122,6 +128,22 @@ main .music-main{
     padding: 1rem 2.5rem;
 }
 
+/*contain*/
+
+.contain{
+    background-color: #141922;
+}
+
+/*Categorie*/
+
+.categorie{
+    padding: 1rem 0;
+}
+
+.categorie li{
+    padding: 0 .5rem ;
+}
+
 /*footer*/
 
 footer{
@@ -132,5 +154,5 @@ footer{
 /*elementi da cancellare*/
 
 .trat{
-    border: 2px black dashed;
+    border: 2px blue dashed;
 }
