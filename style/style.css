@@ -168,6 +168,17 @@ main .music-main{
     width: 100%;
 }
 
+/*Jhon Doe*/
+
+/*Artisti popolari*/
+
+.artisti-popolari img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 /*footer*/
 
 footer{
