@@ -29,13 +29,20 @@ body{
     justify-content: center;
 }
 
-/*main*/
+/*main header*/
 
 main .header-main{
     height: calc(100vh - 15vh);
     width: 16%;
+    color: white;
     background-color: magenta;
 }
+
+.header-main img{
+    width: 30%;
+}
+
+/*main music main*/
 
 main .music-main{
     height: calc(100vh - 15vh);
