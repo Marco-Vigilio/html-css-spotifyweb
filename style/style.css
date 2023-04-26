@@ -7,6 +7,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    color: white ;
 }
 
 ul{
@@ -42,12 +43,15 @@ a{
     align-items: center;
 }
 
+.flex-end{
+    justify-content: flex-end;
+}
+
 /*main header*/
 
 main .header-main{
     height: calc(100vh - 15vh);
     width: 16%;
-    color: white;
     background-color: black;
     padding: .5rem 1rem;
 }
@@ -56,21 +60,21 @@ main .header-main{
     color: white;
 }
 
-nav .logo{
+.header-main nav .logo{
     width: 50%;
     padding-bottom: .5rem;
 }
 
-nav ul{
+.header-main nav ul{
     padding: .5rem 0;
 }
 
-nav ul li{
+.header-main nav ul li{
     padding: .2rem 0;
     align-items: center;
 }
 
-nav .box{
+.header-main nav .box{
     width: 1.5rem;
     height: 1.5rem;
     background-color: #B2B2B2;
@@ -103,6 +107,19 @@ main .music-main{
     height: calc(100vh - 15vh);
     width: 84%;
     background-color: blue;
+}
+
+/*upgrade*/
+
+.upgrade{
+    background-color: #080B12;
+    padding: 1rem .5rem;
+}
+
+.upgrade .bottone{
+    border: 2px white solid;
+    border-radius: 5rem;
+    padding: 1rem 2.5rem;
 }
 
 /*footer*/
