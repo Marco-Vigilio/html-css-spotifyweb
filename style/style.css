@@ -186,6 +186,17 @@ footer{
     background-color: lime;
 }
 
+/*footer left*/
+
+
+footer .left img{
+    width: 3rem;
+}
+
+/*footer center*/
+
+/*footer right*/
+
 /*elementi da cancellare*/
 
 .trat{
