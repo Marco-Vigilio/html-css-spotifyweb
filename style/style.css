@@ -186,6 +186,10 @@ footer{
     background-color: lime;
 }
 
+footer i{
+    padding: 0 .4rem;
+}
+
 /*footer left*/
 
 
@@ -195,7 +199,28 @@ footer .left img{
 
 /*footer center*/
 
+footer .barra{
+    width: 20rem;
+    height: 3px;
+    background-color: white;
+    opacity: 100%;
+    border-radius: 5rem;
+    margin: 0 .5rem;
+    opacity: 70%;
+}
+
+footer .barra div{
+    width: 20%;
+    height: 3px;
+    border-radius: 5rem;
+    background-color: red;
+}
+
 /*footer right*/
+
+footer .right .barra{
+    width: 10rem;
+}
 
 /*elementi da cancellare*/
 
