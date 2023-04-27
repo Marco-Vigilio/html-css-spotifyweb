@@ -217,21 +217,22 @@ footer{
 }
 
 footer i{
-    padding: 0 .4rem;
+    font-size: 1rem;
+    padding: 0 .2rem;
 }
 
 footer>section{
     width: calc(100%/3);
 }
 
-footer>section:nth-child(-n+2){
-margin-right: 1rem;
+footer>section:nth-child(2){
+padding: 0 .5rem;
 }
 
 /*footer left*/
 
 footer .left h1{
-    font-size: 1rem;
+    font-size: .8rem;
 }
 
 footer .left h2{
@@ -275,7 +276,7 @@ footer .barra div{
 /*footer right*/
 
 footer .right .barra{
-    width: 10rem;
+    width: 5rem;
 }
 
 /*elementi da cancellare*/
