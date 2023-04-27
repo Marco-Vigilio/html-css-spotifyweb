@@ -78,7 +78,7 @@ main .header-main{
 }
 
 .header-main nav ul li{
-    padding: .2rem 0;
+    padding: .3rem 0;
     align-items: center;
 }
 
@@ -212,7 +212,7 @@ main .music-main{
 
 footer{
     height: 15vh;
-    background-color: lime;
+    background-color: #282828;
 }
 
 footer i{
@@ -223,7 +223,18 @@ footer i{
 
 
 footer .left img{
+    width: 100%;
+}
+
+footer .left > div:first-child > div:first-child{
     width: 3rem;
+    height: 3rem;
+}
+
+@media screen and (max-width:768px){
+    footer .left>div:last-child{
+        flex-direction: column;
+    }
 }
 
 /*footer center*/
