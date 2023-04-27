@@ -55,19 +55,22 @@ a{
 
 main .header-main{
     height: calc(100vh - 15vh);
-    width: 16%;
-    max-width: 760px;
+    width: 250px;
     background-color: black;
     padding: .5rem 1rem;
 }
 
-.header-main a{
-    color: white;
-}
-
-.header-main nav .logo{
+.header-main nav>img:first-child{
     width: 50%;
     padding-bottom: .5rem;
+}
+
+.header-main nav>img:nth-child(2){
+    width: 100%;
+    display: none;
+}
+.header-main a{
+    color: white;
 }
 
 .header-main nav ul{
@@ -90,25 +93,38 @@ main .header-main{
     width: 1.2rem;
 }
 
-.header-bottom img:first-child{
-    width: 6%;
+.header-bottom a:first-child img{
+    width: 1rem;
 } 
 
-.header-bottom hr{
+.header-bottom a{
     margin: .5rem 0;
 }
 
 .header-bottom a:last-child img{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
     border-radius: 50%;
     object-fit: cover;
     background-color: #B2B2B2;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:576px){
     main .header-main{
-        max-width: 3vw;
+        max-width: 50px;
+        align-items: center;
+    }
+
+    .header-main nav>img:first-child{
+        display: none;
+    }
+
+    .header-main nav>img:nth-child(2){
+        display: block;
+    }
+
+    .header-main p, hr{
+        display: none;
     }
 
     .header-main nav ul:last-child{
@@ -120,9 +136,15 @@ main .header-main{
 
 main .music-main{
     height: calc(100vh - 15vh);
-    width: 84%;
+    width: calc(100% - 250px);/*-----------------------------------------*/
     overflow: auto;
     background-color: #141922;
+}
+
+@media screen and (max-width:576px){
+    main .music-main{
+        min-width: calc(100% - 50px);
+    }
 }
 
 /*upgrade*/
