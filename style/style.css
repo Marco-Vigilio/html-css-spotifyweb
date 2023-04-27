@@ -122,6 +122,7 @@ main .music-main{
     height: calc(100vh - 15vh);
     width: 84%;
     overflow: auto;
+    background-color: #141922;
 }
 
 /*upgrade*/
@@ -135,12 +136,6 @@ main .music-main{
     border: 2px white solid;
     border-radius: 5rem;
     padding: 1rem 2.5rem;
-}
-
-/*contain*/
-
-.contain{
-    background-color: #141922;
 }
 
 /*Categorie*/
@@ -160,12 +155,26 @@ main .music-main{
 }
 
 .items{
-    width: 12rem;
+    width: calc((100% /6) - 1rem);
     text-align: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
 }
 
 .items img{
     width: 100%;
+}
+
+@media screen and (max-width:992px){
+    .items{
+        width: calc((100%/4) - 1rem);
+    }
+}
+
+@media screen and (max-width:768px){
+    .items{
+        width: calc((100%/2) - 1rem);
+    }
 }
 
 /*Jhon Doe*/
@@ -173,8 +182,6 @@ main .music-main{
 /*Artisti popolari*/
 
 .artisti-popolari img{
-    width: 10rem;
-    height: 10rem;
     border-radius: 50%;
     object-fit: cover;
 }
