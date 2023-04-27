@@ -230,7 +230,11 @@ margin-right: 1rem;
 
 /*footer left*/
 
-footer .left h1,h2{
+footer .left h1{
+    font-size: 1rem;
+}
+
+footer .left h2{
     font-size: .5rem;
 }
 
