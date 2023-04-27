@@ -212,7 +212,8 @@ main .music-main{
 
 footer{
     height: 15vh;
-    background-color: #282828;
+    background-color: lime;
+    /*background-color: #282828;*/
 }
 
 footer i{
@@ -239,8 +240,18 @@ footer .left > div:first-child > div:first-child{
 
 /*footer center*/
 
+footer .center>div:last-child{
+    min-width: 25rem;
+}
+
+@media screen and (max-width:992px) {
+    footer .center>div:last-child{
+        min-width: 20rem;
+    }
+}
+
 footer .barra{
-    width: 20rem;
+    width: 100%;
     height: 3px;
     background-color: white;
     opacity: 100%;
