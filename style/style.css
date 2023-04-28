@@ -187,6 +187,20 @@ main .music-main{
     width: 100%;
 }
 
+.hover-immagine{
+    line-height: 0;
+    position: relative;
+}
+
+.hover-immagine i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    font-size: 4rem;
+    display: none;
+}
+
 @media screen and (max-width:992px){
     .items{
         width: calc((100%/4) - 1rem);
@@ -203,9 +217,13 @@ main .music-main{
 
 /*Artisti popolari*/
 
-.artisti-popolari img{
+.artisti-popolari img {
     border-radius: 50%;
     object-fit: cover;
+}
+
+.artisti-popolari .hover-immagine{
+    border-radius: 50%;
 }
 
 /*footer*/
@@ -217,26 +235,23 @@ footer{
 }
 
 footer i{
-    font-size: 1rem;
-    padding: 0 .2rem;
+    font-size: 1em;
+    padding: 0 .2em;
 }
 
-footer>section{
-    width: calc(100%/3);
-}
 
 footer>section:nth-child(2){
-padding: 0 .5rem;
+padding: 0 .5em;
 }
 
 /*footer left*/
 
 footer .left h1{
-    font-size: .8rem;
+    font-size: 1rem;
 }
 
 footer .left h2{
-    font-size: .5rem;
+    font-size: .7rem;
 }
 
 footer .left img{
@@ -248,6 +263,10 @@ footer .left > div:first-child > div:first-child{
     height: 3rem;
 }
 
+footer .left>div.brano>div{
+    margin-right: 1rem;
+}
+
 @media screen and (max-width:768px){
     footer .left>div:last-child{
         flex-direction: column;
@@ -256,8 +275,21 @@ footer .left > div:first-child > div:first-child{
 
 /*footer center*/
 
+footer .center i{
+    padding: 0 .5em;
+}
+
+footer .center div:nth-child(3) i{
+    font-size: 1.3em;
+}
+
+footer .center>div:last-child>div:nth-child(odd){
+    font-size: .5em;
+    padding: 0 .5rem;
+}
+
 footer .barra{
-    width: 100%;
+    min-width: 20rem;
     height: 3px;
     background-color: white;
     opacity: 100%;
@@ -283,4 +315,8 @@ footer .right .barra{
 
 .trat{
     border: 2px blue dashed;
+}
+
+.sfondo{
+    background-color: red;
 }

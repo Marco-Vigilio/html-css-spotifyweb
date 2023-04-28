@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*flex*/
+
+.flex{
+    display: flex;
+}
+
+.flex-bet{
+    justify-content: space-between;
+}
+
+.flex-ar{
+    justify-content: space-around;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+.flex-col{
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-al-cen{
+    align-items: center;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+/*footer*/
+
+footer{
+    background-color: #282828;
+    height: 15vh;
+    padding: 0 .5rem;
+}
+
+footer section{
+    width: calc(100% / 3);
+}
+
+footer i{
+    padding: 0 .5rem;
+}
+
+/*footer left*/
+
+footer .left .brano>div:first-child{
+    width: 3rem;
+    height: 3rem;
+}
+
+footer .left .brano{
+    margin-right: .5rem;
+}
+
+footer .left .brano img{
+    width: 100%;
+}
+
+footer .left .brano div{
+    margin-right: .5rem;
+}
+
+footer .left .brano h1{
+    font-size: 1rem;
+}
+
+footer .left .brano h2{
+    font-size: .5rem;
+}
+
+footer .left .funzioni i{
+    padding: 0 .5rem;
+}
+
+@media screen and (max-width:768px){
+    footer .left .funzioni{
+        flex-direction: column;
+    }
+}
+
+/*footer center*/
+
+footer .center .play-music i:nth-child(3){
+    font-size: 1.5rem;
+}
+
+footer .center .barra-music .numeri{
+    font-size: .5rem;
+}
+
+footer .center .barra-music .barra{
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+/*footer right*/
+
+
+
+/*elementi da cancellare*/
+
+.trat{
+    border: 2px dashed blue;
+}
