@@ -83,6 +83,14 @@ main .header-main{
     font-size: .8rem;
 }
 
+.header-main nav ul li a{
+    color: gray;
+}
+
+.header-main nav ul li:first-child a:nth-child(2) {
+    color: white;
+}
+
 .header-main nav .box{
     width: 1.5rem;
     height: 1.5rem;
@@ -100,6 +108,9 @@ main .header-main{
     margin-right: .5rem;
 }
 
+.header-bottom div:first-child{
+    opacity: 50%;
+}
 .header-bottom div:first-child img{
     width: 1rem;
     margin-right: .5rem;
@@ -193,7 +204,20 @@ main .music-main{
 /*Recently Played*/
 
 .recently-played, .jhon-doe, .artisti-popolari{
-    padding: .5rem 1rem;
+    padding: 1rem;
+}
+
+.titoli{
+    padding-bottom: 1.5rem;
+}
+
+.titoli h1{
+    font-size: 1.5rem;
+}
+
+.titoli p{
+    padding-top: .5rem;
+    color: gray;
 }
 
 .items{
@@ -205,6 +229,17 @@ main .music-main{
 
 .items img{
     width: 100%;
+}
+
+.items h2{
+    font-size: 1rem;
+    padding-top: 1rem;
+}
+
+.items h3{
+    font-size: .8rem;
+    padding-top: .5rem;
+    color: gray;
 }
 
 .hover-immagine{
