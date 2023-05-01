@@ -154,6 +154,16 @@ main .header-main{
     }
 }
 
+/*hover header-main*/
+
+.header-main nav ul li a:hover{
+    color: white;
+}
+
+.header-bottom div:first-child:hover{
+    opacity: 100%;
+}
+
 /*main music main*/
 
 main .music-main{
