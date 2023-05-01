@@ -161,14 +161,22 @@ main .music-main{
 /*upgrade*/
 
 .upgrade{
-    background-color: #080B12;
+    background-color: black;
+    opacity: 60%;
     padding: 1rem .5rem;
+    width: 100%;
 }
 
 .upgrade .bottone{
     border: 2px white solid;
     border-radius: 5rem;
     padding: 1rem 2.5rem;
+}
+
+@media screen and (max-width:576px){
+    .upgrade{
+
+    }
 }
 
 /*Categorie*/
@@ -178,7 +186,8 @@ main .music-main{
 }
 
 .categorie li{
-    padding: 0 .5rem ;
+    font-size: .8rem;
+    padding: 0 1rem ;
 }
 
 /*Recently Played*/
