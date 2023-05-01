@@ -80,6 +80,7 @@ main .header-main{
 .header-main nav ul li{
     padding: .3rem 0;
     align-items: center;
+    font-size: .8rem;
 }
 
 .header-main nav .box{
@@ -87,22 +88,32 @@ main .header-main{
     height: 1.5rem;
     background-color: #B2B2B2;
     color: black;
+    margin-right: .5rem;
+}
+
+.header-main nav .box i{
+    font-size: 1rem;
 }
 
 .header-main .icon{
     width: 1.2rem;
+    margin-right: .5rem;
 }
 
 .header-bottom div:first-child img{
     width: 1rem;
+    margin-right: .5rem;
 } 
+
+.header-bottom div:first-child p{
+    font-size: .8rem;
+}
 
 .header-bottom div{
     margin: .5rem 0;
 }
 
 .header-bottom div:last-child img{
-    width: 1.2rem;
     height: 1.2rem;
     border-radius: 50%;
     object-fit: cover;
