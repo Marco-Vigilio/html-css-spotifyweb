@@ -100,7 +100,7 @@ footer .left .brano h2{
 }
 
 footer .left .funzioni i{
-    padding: 0 .5rem;
+    padding: 1rem .5rem;
 }
 
 @media screen and (max-width:768px){
@@ -114,6 +114,10 @@ footer .left .funzioni i{
 
 footer .center .play-music i:nth-child(3){
     font-size: 1.5rem;
+}
+
+footer .center .play-music{
+    margin-bottom: 1rem;
 }
 
 footer .center .barra-music .numeri{
@@ -146,6 +150,17 @@ footer .barra-volume{
     height: 100%;
     background-color: white;
     border-radius: 5rem;
+}
+
+@media screen and (max-width:487px) {
+    
+    footer .right{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+    }
+
+   
 }
 
 /*elementi da cancellare*/

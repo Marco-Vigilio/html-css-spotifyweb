@@ -229,94 +229,112 @@ main .music-main{
 /*footer*/
 
 footer{
+    background-color: #282828;
     height: 15vh;
-    background-color: lime;
-    /*background-color: #282828;*/
+    padding: 0 .5rem;
 }
 
 footer i{
-    font-size: 1em;
-    padding: 0 .2em;
+    padding: 0 .5rem;
 }
 
+footer .left, footer .right{
+    width: 230px;
+}
 
-footer>section:nth-child(2){
-padding: 0 .5em;
+footer .center{
+    width: 30%;
 }
 
 /*footer left*/
 
-footer .left h1{
-    font-size: 1rem;
-}
-
-footer .left h2{
-    font-size: .7rem;
-}
-
-footer .left img{
-    width: 100%;
-}
-
-footer .left > div:first-child > div:first-child{
+footer .left .brano>div:first-child{
     width: 3rem;
     height: 3rem;
 }
 
-footer .left>div.brano>div{
-    margin-right: 1rem;
+footer .left .brano{
+    margin-right: .5rem;
+}
+
+footer .left .brano img{
+    width: 100%;
+}
+
+footer .left .brano div{
+    margin-right: .5rem;
+}
+
+footer .left .brano h1{
+    font-size: 1rem;
+}
+
+footer .left .brano h2{
+    font-size: .5rem;
+}
+
+footer .left .funzioni i{
+    padding: 0 .5rem;
 }
 
 @media screen and (max-width:768px){
-    footer .left>div:last-child{
+    footer .left .funzioni{
         flex-direction: column;
     }
 }
 
 /*footer center*/
 
-footer .center i{
-    padding: 0 .5em;
+
+footer .center .play-music i:nth-child(3){
+    font-size: 1.5rem;
 }
 
-footer .center div:nth-child(3) i{
-    font-size: 1.3em;
-}
-
-footer .center>div:last-child>div:nth-child(odd){
-    font-size: .5em;
+footer .center .barra-music .numeri{
+    font-size: .5rem;
     padding: 0 .5rem;
 }
 
-footer .barra{
-    min-width: 20rem;
-    height: 3px;
+footer .center .barra-play{
+    width: 20%;
+    height: 100%;
     background-color: white;
-    opacity: 100%;
     border-radius: 5rem;
-    margin: 0 .5rem;
-    opacity: 70%;
 }
 
-footer .barra div{
-    width: 20%;
-    height: 3px;
+footer .barra-music{
+    width: 100%;
+}
+
+footer .barra{
+    width: 100%;
+    height: 4px;
+    background-color: gray;
     border-radius: 5rem;
-    background-color: red;
 }
 
 /*footer right*/
 
-footer .right .barra{
-    width: 5rem;
+footer .barra-volume{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 5rem;
+}
+
+@media screen and (max-width:487px) {
+    
+    footer .right{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+    }
+
+   
 }
 
 /*elementi da cancellare*/
 
 .trat{
-    border: 2px blue dashed;
-}
-
-.sfondo{
-    background-color: red;
+    border: 2px dashed blue;
 }
