@@ -365,6 +365,10 @@ footer .left .funzioni i:hover{
     opacity: 100%;
 }
 
+footer .left .brano h2:hover{
+    text-decoration: underline;
+}
+
 @media screen and (max-width:768px){
     footer .left .funzioni{
         flex-direction: column;
@@ -410,7 +414,7 @@ footer .pallino{
     height: 1rem;
     background-color: white;
     border-radius: 50%;
-    opacity: 0;
+    display: none;
 }
 
 /*hover footer-center*/
@@ -419,12 +423,12 @@ footer .center .play-music a:nth-child(3):hover{
     font-size: 2rem;
 }
 
-footer .barra-play:hover , .barra-volume:hover{
+.barra-music:hover .barra-play, .barra-music:hover .barra-volume{
     background-color: lightgreen;
 }
 
-footer .barra-play:hover .pallino{
-    opacity: 100;
+footer .barra-music:hover .pallino{
+    display: block;
 }
 
 /*footer right*/
