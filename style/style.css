@@ -16,6 +16,7 @@ ul{
 
 a{
     text-decoration: none;
+    color: white;
 }
 
 /*flex*/
@@ -68,9 +69,6 @@ main .header-main{
 .header-main nav>img:nth-child(2){
     width: 100%;
     display: none;
-}
-.header-main a{
-    color: white;
 }
 
 .header-main nav ul{
@@ -251,7 +249,6 @@ main .music-main{
 .items h2{
     font-size: 1rem;
     padding-top: 1rem;
-    color: white;
 }
 
 .items h3{
@@ -292,7 +289,7 @@ main .music-main{
     opacity: 50%;
 }
 
-.hover-immagine i:hover{
+.hover-immagine:hover i{
     opacity: 100%;
     color: white;
 }
@@ -359,6 +356,13 @@ footer .left .brano h2{
 
 footer .left .funzioni i{
     padding: 0 .5rem;
+    opacity: 50%;
+}
+
+
+/*hover footer left*/
+footer .left .funzioni i:hover{
+    opacity: 100%;
 }
 
 @media screen and (max-width:768px){
@@ -369,8 +373,11 @@ footer .left .funzioni i{
 
 /*footer center*/
 
+footer .center .play-music{
+    margin-bottom: 1rem;
+}
 
-footer .center .play-music i:nth-child(3){
+footer .center .play-music a:nth-child(3){
     font-size: 1.5rem;
 }
 
@@ -380,6 +387,7 @@ footer .center .barra-music .numeri{
 }
 
 footer .center .barra-play{
+
     width: 20%;
     height: 100%;
     background-color: white;
@@ -395,6 +403,28 @@ footer .barra{
     height: 4px;
     background-color: gray;
     border-radius: 5rem;
+}
+
+footer .pallino{
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/*hover footer-center*/
+
+footer .center .play-music a:nth-child(3):hover{
+    font-size: 2rem;
+}
+
+footer .barra-play:hover , .barra-volume:hover{
+    background-color: lightgreen;
+}
+
+footer .barra-play:hover .pallino{
+    opacity: 100;
 }
 
 /*footer right*/
