@@ -180,13 +180,17 @@ main .music-main{
 /*upgrade*/
 
 .upgrade{
-    background-color: black;
-    opacity: 60%;
+    background:rgba(0, 0, 2, .7);
     padding: 1rem .5rem;
-    width: 100%;
+    width: calc(100% - 250px);
+    height: 6rem;
+
+    z-index: 1;
+    position: fixed;
 }
 
 .upgrade .bottone{
+    margin: .5rem 0;
     border: 2px white solid;
     border-radius: 5rem;
     padding: 1rem 2.5rem;
@@ -194,8 +198,20 @@ main .music-main{
 
 @media screen and (max-width:576px){
     .upgrade{
-
+        min-width: calc(100% - 50px);
     }
+}
+
+/*hover upgrade*/
+
+.upgrade .bottone:hover{
+    font-size: 1.2rem;
+}
+
+/*conatain*/
+
+section.contain{
+    margin-top: 6rem;
 }
 
 /*Categorie*/
@@ -285,9 +301,8 @@ main .music-main{
 
 /*hover mian*/
 
-.hover-immagine:hover{
-    z-index: 2;
-    background: rgba(0, 0, 2, .7);
+.hover-immagine:hover img{
+    filter: opacity(50%);
 }
 
 .hover-immagine:hover i{
