@@ -1,87 +1,89 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    color: white ;
+    color: white;
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
 /*flex*/
 
-.flex{
+.flex {
     display: flex;
 }
 
-.flex-bet{
+.flex-bet {
     justify-content: space-between;
 }
 
-.flex-ar{
+.flex-ar {
     justify-content: space-around;
 }
 
-.flex-wrap{
+.flex-wrap {
     flex-wrap: wrap;
 }
-.flex-col{
+
+.flex-col {
     flex-direction: column;
 }
 
-.flex-center{
+.flex-center {
     justify-content: center;
 }
 
-.flex-al-cen{
+.flex-al-cen {
     align-items: center;
 }
 
-.flex-end{
+.flex-end {
     justify-content: flex-end;
 }
 
 /*main header*/
 
-main .header-main{
-    height: calc(100vh - 15vh);
+main .header-main {
+    /*height: calc(100vh - 15vh);*/
+    /*height: 100vh;*/
     width: 250px;
     background-color: black;
     padding: .5rem 1rem;
 }
 
-.header-main nav>img:first-child{
+.header-main nav>img:first-child {
     width: 50%;
     padding-bottom: .5rem;
 }
 
-.header-main nav>img:nth-child(2){
+.header-main nav>img:nth-child(2) {
     width: 100%;
     display: none;
 }
 
-.header-main nav ul{
+.header-main nav ul {
     padding: .5rem 0;
 }
 
-.header-main nav ul li{
+.header-main nav ul li {
     padding: .3rem 0;
     align-items: center;
     font-size: .8rem;
 }
 
-.header-main nav ul li a{
+.header-main nav ul li a {
     color: gray;
 }
 
@@ -89,7 +91,7 @@ main .header-main{
     color: white;
 }
 
-.header-main nav .box{
+.header-main nav .box {
     width: 1.5rem;
     height: 1.5rem;
     background-color: #B2B2B2;
@@ -97,90 +99,93 @@ main .header-main{
     margin-right: .5rem;
 }
 
-.header-main nav .box i{
+.header-main nav .box i {
     font-size: 1rem;
 }
 
-.header-main .icon{
+.header-main .icon {
     width: 1.2rem;
     margin-right: .5rem;
 }
 
-.header-bottom div:first-child{
+.header-bottom div:first-child {
     opacity: 50%;
 }
-.header-bottom div:first-child img{
+
+.header-bottom div:first-child img {
     width: 1rem;
     margin-right: .5rem;
-} 
+}
 
-.header-bottom div:first-child p{
+.header-bottom div:first-child p {
     font-size: .8rem;
 }
 
-.header-bottom div{
+.header-bottom div {
     margin: .5rem 0;
 }
 
-.header-bottom div:last-child img{
+.header-bottom div:last-child img {
     height: 1.2rem;
     border-radius: 50%;
     object-fit: cover;
     background-color: #B2B2B2;
 }
 
-@media screen and (max-width:576px){
-    main .header-main{
+@media screen and (max-width:576px) {
+    main .header-main {
         max-width: 50px;
         align-items: center;
     }
 
-    .header-main nav>img:first-child{
+    .header-main nav>img:first-child {
         display: none;
     }
 
-    .header-main nav>img:nth-child(2){
+    .header-main nav>img:nth-child(2) {
         display: block;
     }
 
-    .header-main p, hr{
+    .header-main p,
+    hr {
         display: none;
     }
 
-    .header-main nav ul:last-child{
+    .header-main nav ul:last-child {
         display: none;
     }
 }
 
 /*hover header-main*/
 
-.header-main nav ul li a:hover{
+.header-main nav ul li a:hover {
     color: white;
 }
 
-.header-bottom div:first-child:hover{
+.header-bottom div:first-child:hover {
     opacity: 100%;
 }
 
 /*main music main*/
 
-main .music-main{
+main .music-main {
     height: calc(100vh - 15vh);
-    width: calc(100% - 250px);/*-----------------------------------------*/
+    width: calc(100% - 250px);
+    /*-----------------------------------------*/
     overflow: auto;
     background-color: #141922;
 }
 
-@media screen and (max-width:576px){
-    main .music-main{
+@media screen and (max-width:576px) {
+    main .music-main {
         min-width: calc(100% - 50px);
     }
 }
 
 /*upgrade*/
 
-.upgrade{
-    background:rgba(0, 0, 2, .7);
+.upgrade {
+    background: rgba(0, 0, 2, .7);
     padding: 1rem .5rem;
     width: calc(100% - 250px);
     height: 6rem;
@@ -189,123 +194,128 @@ main .music-main{
     position: fixed;
 }
 
-.upgrade .bottone{
+.upgrade .bottone {
     margin: .5rem 0;
     border: 2px white solid;
     border-radius: 5rem;
     padding: 1rem 2.5rem;
+    margin-right: 1rem;
 }
 
-@media screen and (max-width:576px){
-    .upgrade{
+@media screen and (max-width:576px) {
+    .upgrade {
         min-width: calc(100% - 50px);
     }
 }
 
 /*hover upgrade*/
 
-.upgrade .bottone:hover{
+.upgrade .bottone:hover {
     font-size: 1.2rem;
 }
 
 /*conatain*/
 
-section.contain{
+section.contain {
     margin-top: 6rem;
 }
 
 /*Categorie*/
 
-.categorie{
+.categorie {
     padding: 1rem 0;
 }
 
-.categorie li{
+.categorie li {
     font-size: .8rem;
-    padding: 0 1rem ;
+    padding: 0 1rem;
     color: gray;
 }
 
 /*hover-Categorie*/
 
-.categorie li:hover{
+.categorie li:hover {
     color: white;
 }
 
 /*Recently Played*/
 
-.recently-played, .jhon-doe, .artisti-popolari{
+.recently-played,
+.jhon-doe,
+.artisti-popolari {
     padding: 1rem;
 }
 
-.titoli{
+.titoli {
     padding-bottom: 1.5rem;
 }
 
-.titoli h1{
+.titoli h1 {
     font-size: 1.5rem;
 }
 
-.titoli p{
+.titoli p {
     padding-top: .5rem;
     color: gray;
 }
 
-.items{
+.items {
     width: calc((100% /6) - 1rem);
     text-align: center;
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
 
-.items img{
+.items img {
     width: 100%;
 }
 
-.items h2{
+.items h2 {
     font-size: 1rem;
     padding-top: 1rem;
 }
 
-.items h3{
+.items h3 {
     font-size: .8rem;
     padding-top: .5rem;
     color: gray;
 }
 
-.hover-immagine{
+.hover-immagine {
     line-height: 0;
+    position: relative;
+    background: rgba(0, 0, 0, .7);
+}
+
+.scuro {
+    background: rgba(0, 0, 0, .7);
     position: relative;
 }
 
-.hover-immagine i{
+.hover-immagine i {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     font-size: 4rem;
     display: none;
 }
 
-@media screen and (max-width:992px){
-    .items{
+@media screen and (max-width:992px) {
+    .items {
         width: calc((100%/4) - 1rem);
     }
 }
 
-@media screen and (max-width:768px){
-    .items{
+@media screen and (max-width:768px) {
+    .items {
         width: calc((100%/2) - 1rem);
     }
 }
 
 /*hover mian*/
 
-.hover-immagine:hover img{
-    filter: opacity(50%);
-}
-
-.hover-immagine:hover i{
+.hover-immagine:hover i {
     display: block;
 }
 
@@ -318,94 +328,95 @@ section.contain{
     object-fit: cover;
 }
 
-.artisti-popolari .hover-immagine{
+.artisti-popolari .hover-immagine {
     border-radius: 50%;
 }
 
 /*footer*/
 
-footer{
+footer {
     background-color: #282828;
     height: 15vh;
     padding: 0 .5rem;
 }
 
-footer i{
+footer i {
     padding: 0 .5rem;
 }
 
-footer .left, footer .right{
+footer .left,
+footer .right {
     width: 230px;
 }
 
-footer .center{
+footer .center {
     width: 30%;
 }
 
 /*footer left*/
 
-footer .left .brano>div:first-child{
+footer .left .brano>div:first-child {
     width: 3rem;
     height: 3rem;
 }
 
-footer .left .brano{
+footer .left .brano {
     margin-right: .5rem;
 }
 
-footer .left .brano img{
+footer .left .brano img {
     width: 100%;
 }
 
-footer .left .brano div{
+footer .left .brano div {
     margin-right: .5rem;
 }
 
-footer .left .brano h1{
+footer .left .brano h1 {
     font-size: 1rem;
 }
 
-footer .left .brano h2{
+footer .left .brano h2 {
     font-size: .5rem;
 }
 
-footer .left .funzioni i{
+footer .left .funzioni i {
     padding: 0 .5rem;
     opacity: 50%;
 }
 
 
 /*hover footer left*/
-footer .left .funzioni i:hover{
+footer .left .funzioni i:hover {
     opacity: 100%;
 }
 
-footer .left .brano h2:hover{
+footer .left .brano h2:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width:768px){
-    footer .left .funzioni{
+@media screen and (max-width:768px) {
+    footer .left .funzioni {
         flex-direction: column;
     }
 }
 
 /*footer center*/
 
-footer .center .play-music{
+footer .center .play-music {
     margin-bottom: 1rem;
 }
 
-footer .center .play-music a:nth-child(3){
+footer .center .play-music a:nth-child(3) {
     font-size: 1.5rem;
 }
 
-footer .center .barra-music .numeri{
+footer .center .barra-music .numeri {
     font-size: .5rem;
     padding: 0 .5rem;
 }
 
-footer .center .barra-play{
+footer .center .barra-play {
 
     width: 20%;
     height: 100%;
@@ -413,18 +424,18 @@ footer .center .barra-play{
     border-radius: 5rem;
 }
 
-footer .barra-music{
+footer .barra-music {
     width: 100%;
 }
 
-footer .barra{
+footer .barra {
     width: 100%;
     height: 4px;
     background-color: gray;
     border-radius: 5rem;
 }
 
-footer .pallino{
+footer .pallino {
     width: 1rem;
     height: 1rem;
     background-color: white;
@@ -434,21 +445,22 @@ footer .pallino{
 
 /*hover footer-center*/
 
-footer .center .play-music a:nth-child(3):hover{
+footer .center .play-music a:nth-child(3):hover {
     font-size: 2rem;
 }
 
-.barra-music:hover .barra-play, .barra-music:hover .barra-volume{
+.barra-music:hover .barra-play,
+.barra-music:hover .barra-volume {
     background-color: lightgreen;
 }
 
-footer .barra-music:hover .pallino{
+footer .barra-music:hover .pallino {
     display: block;
 }
 
 /*footer right*/
 
-footer .barra-volume{
+footer .barra-volume {
     width: 50%;
     height: 100%;
     background-color: white;
@@ -456,18 +468,22 @@ footer .barra-volume{
 }
 
 @media screen and (max-width:487px) {
-    
-    footer .right{
+
+    footer .right {
         flex-wrap: wrap;
         justify-content: center;
         align-self: center;
     }
 
-   
+
 }
 
 /*elementi da cancellare*/
 
-.trat{
+.trat {
     border: 2px dashed blue;
+}
+
+.sfondo {
+    background-color: red;
 }
